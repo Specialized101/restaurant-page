@@ -1,1 +1,4 @@
-console.log('Hi!')
+import { loadHome } from './home.js'
+import './style.css'
+
+loadHome()
