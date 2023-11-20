@@ -6,7 +6,7 @@ import './style.css'
 const content = document.querySelector('#content')
 const tabs = ['home', 'menu', 'contact']
 
-loadMenu()
+loadHome()
 createListeners()
 
 function createListeners () {
