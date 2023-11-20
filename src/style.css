@@ -1,4 +1,8 @@
-*, *::after, *::before {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*,
+*::after,
+*::before {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -7,6 +11,7 @@
 body {
     display: flex;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #content {
@@ -15,10 +20,10 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 80px 1fr 150px;
-    grid-template-areas: 
-    "header"
-    "main-content"
-    "footer";
+    grid-template-areas:
+        "header"
+        "main-content"
+        "footer";
 }
 
 .header {
@@ -67,14 +72,50 @@ body {
     font-size: 1.2rem;
 }
 
+.main-content .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.main-content .card {
+    justify-self: center;
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.main-content .card img {
+    align-self: center;
+    width: 100%;
+}
+
+.main-content .card>ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.main-content .card > ul ul {
+    margin-left: 20px;
+}
+
 .footer {
     grid-area: footer;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; 
-    padding: 15px 0; 
+    gap: 10px;
+    padding: 15px 0;
 }
 
 .footer .social-links {
@@ -85,9 +126,8 @@ body {
 .footer p {
     font-weight: 900;
     font-size: 1.2rem;
-} 
+}
 
 img {
     width: 50px;
 }
-

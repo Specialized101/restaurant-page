@@ -1,4 +1,33 @@
 import { loadHome } from './home.js'
+import { loadMenu } from './menu.js'
 import './style.css'
 
-loadHome()
+const content = document.querySelector('#content')
+const tabs = ['home', 'menu', 'contact']
+
+loadMenu()
+createListeners()
+
+function createListeners () {
+    tabs.forEach(tab => {
+        document.querySelector(`#${tab}`).addEventListener('click', () => {
+            // clear content
+            content.replaceChildren()
+    
+            switch (tab) {
+                case 'home':
+                    loadHome()
+                    break;
+                case 'menu':
+                    loadMenu()
+                    break;
+                case 'contact':
+                    loadContact()
+                    break;
+            }
+
+            // recreate the listeners after the clear content and loading the page content
+            createListeners()
+        })
+    })
+}

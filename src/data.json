@@ -1,0 +1,32 @@
+{
+    "menu1": {
+        "title": "Menu 1",
+        "price": 10,
+        "description": "This is the description of Menu 1",
+        "ingredients": {
+            "ingredient1": "ingredient11",
+            "ingredient2": "ingredient11",
+            "ingredient3": "ingredient11"
+        }  
+    },
+    "menu2": {
+        "title": "Menu 2",
+        "price": 20,
+        "description": "This is the description of Menu 2",
+        "ingredients": {
+            "ingredient1": "ingredient21",
+            "ingredient2": "ingredient22",
+            "ingredient3": "ingredient23"
+        }
+    },
+    "menu3": {
+        "title": "Menu 3",
+        "price": 30,
+        "description": "This is the description of Menu 3",
+        "ingredients": {
+            "ingredient1": "ingredient31",
+            "ingredient2": "ingredient32",
+            "ingredient3": "ingredient33"
+        }
+    }
+}

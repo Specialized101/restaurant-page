@@ -14,11 +14,11 @@ const header = () => {
 
     liMenu.textContent = 'Menu'
     liMenu.classList.add('nav-link')
-    liMenu.setAttribute('id', 'home')
+    liMenu.setAttribute('id', 'menu')
     
     liContact.textContent = 'Contact'
     liContact.classList.add('nav-link')
-    liContact.setAttribute('id', 'home')
+    liContact.setAttribute('id', 'contact')
 
     ul.classList.add('nav-links')
     ul.appendChild(liHome)
