@@ -1,5 +1,6 @@
 import { loadHome } from './home.js'
 import { loadMenu } from './menu.js'
+import { loadContact } from './contact.js'
 import './style.css'
 
 const content = document.querySelector('#content')
@@ -26,7 +27,7 @@ function createListeners () {
                     break;
             }
 
-            // recreate the listeners after the clear content and loading the page content
+            // recreate the listeners after clearing content and loading the page content
             createListeners()
         })
     })
